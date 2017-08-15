@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Files using XMLHttpRequest - Minimal</title>
+</head>
+<body>
+    <div class="row">
+        <label for="thumbnail">Select a File to Upload</label>
+        <input type="file" name="thumbnail" id="thumbnail" onchange="fileSelected();"/>
+    </div>
+    <div id="fileName"></div>
+    <div id="fileSize"></div>
+    <div id="fileType"></div>
+    <input id="name">
+    <div class="row">
+        <input type="button" onclick="uploadFile()" value="Upload" />
+    </div>
+    <ul id="msg"></ul>
+<div id="progressNumber"></div>
+<div id="son"></div>
+<script src="/lib/jquery-2.1.1.min.js"></script>
+<script src="/js/upload.js"></script>
+</body>
+</html>
